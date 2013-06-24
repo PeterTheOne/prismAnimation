@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>prismAnimation</title>
+
+        <script src="js/lib/jquery-2.0.2.js"></script>
+        <!--<script src="js/lib/jquery-2.0.2.min.js"></script>-->
+        <script src="js/script.js"></script>
+
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 .main, h2, h3, span.intro, #menu {
+                color: #000000;
+                font-family: 'blkm';
+                word-spacing: -0.2em;
+            }
+            h1 {
+                background: none repeat scroll 0 0 #000000;
+                border-radius: 50% 50% 50% 50%;
+                display: block;
+                font-size: 1em;
+                height: 270px;
+                left: 50%;
+                margin-left: -150px;
+                padding-top: 30px;
+                position: absolute;
+                text-align: center;
+                text-transform: uppercase;
+                top: 50px;
+                width: 300px;
+            }
+            h1 .main {
+                color: #FFFFFF;
+                display: block;
+                font-size: 6em;
+                padding: 0.05em 0;
+                text-shadow: 0.05em 0.05em 0 #000000;
+                transform: rotate(-2deg);
+                word-spacing: -0.3em;
+            }
+            h1 .pre, h1 .post {
+                font-size: 0.7em;
+                letter-spacing: 1em;
+                opacity: 0;
+            }
+            h1 .main:hover {
+                font-size: 6.3em;
+                transform: rotate(-4deg);
+            }
+
+            canvas {
+                position: absolute;
+                left: 50%;
+                margin-left: -400px;
+                top: -200px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <span class="pre">European</span>
+            <span class="main">Anti PRISM</span>
+            <span class="post">Initiative</span>
+        </h1>
+        <canvas id="canvas" width="800" height="800"></canvas>
+    </body>
+</html>
